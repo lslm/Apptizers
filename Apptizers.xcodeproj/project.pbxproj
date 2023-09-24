@@ -19,6 +19,8 @@
 		76AB69382ABF673100EB8DD1 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69372ABF673100EB8DD1 /* OrderView.swift */; };
 		76AB693A2ABF715B00EB8DD1 /* Apptizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69392ABF715B00EB8DD1 /* Apptizer.swift */; };
 		76AB693F2ABFD76100EB8DD1 /* ApptizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB693E2ABFD76100EB8DD1 /* ApptizerListCell.swift */; };
+		76AB69412ABFD89300EB8DD1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69402ABFD89300EB8DD1 /* NetworkManager.swift */; };
+		76AB69432ABFD9B100EB8DD1 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69422ABFD9B100EB8DD1 /* APError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		76AB69372ABF673100EB8DD1 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		76AB69392ABF715B00EB8DD1 /* Apptizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apptizer.swift; sourceTree = "<group>"; };
 		76AB693E2ABFD76100EB8DD1 /* ApptizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptizerListCell.swift; sourceTree = "<group>"; };
+		76AB69402ABFD89300EB8DD1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		76AB69422ABFD9B100EB8DD1 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				76AB69092ABF654000EB8DD1 /* ApptizersApp.swift */,
 				76AB690D2ABF654200EB8DD1 /* Assets.xcassets */,
 				76AB690F2ABF654200EB8DD1 /* Preview Content */,
+				76AB69402ABFD89300EB8DD1 /* NetworkManager.swift */,
+				76AB69422ABFD9B100EB8DD1 /* APError.swift */,
 			);
 			path = Apptizers;
 			sourceTree = "<group>";
@@ -297,9 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				76AB693F2ABFD76100EB8DD1 /* ApptizerListCell.swift in Sources */,
+				76AB69432ABFD9B100EB8DD1 /* APError.swift in Sources */,
 				76AB69362ABF672300EB8DD1 /* AccountView.swift in Sources */,
 				76AB69342ABF671700EB8DD1 /* ApptizerListView.swift in Sources */,
 				76AB693A2ABF715B00EB8DD1 /* Apptizer.swift in Sources */,
+				76AB69412ABFD89300EB8DD1 /* NetworkManager.swift in Sources */,
 				76AB690C2ABF654000EB8DD1 /* ApptizerTabView.swift in Sources */,
 				76AB690A2ABF654000EB8DD1 /* ApptizersApp.swift in Sources */,
 				76AB69382ABF673100EB8DD1 /* OrderView.swift in Sources */,
