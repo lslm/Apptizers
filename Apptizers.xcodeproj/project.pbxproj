@@ -110,13 +110,13 @@
 		76AB69082ABF654000EB8DD1 /* Apptizers */ = {
 			isa = PBXGroup;
 			children = (
-				76AB693D2ABFD71500EB8DD1 /* Models */,
-				76AB693B2ABFD6D600EB8DD1 /* Screens */,
+				76AB69422ABFD9B100EB8DD1 /* APError.swift */,
 				76AB69092ABF654000EB8DD1 /* ApptizersApp.swift */,
 				76AB690D2ABF654200EB8DD1 /* Assets.xcassets */,
-				76AB690F2ABF654200EB8DD1 /* Preview Content */,
+				76AB693D2ABFD71500EB8DD1 /* Models */,
 				76AB69402ABFD89300EB8DD1 /* NetworkManager.swift */,
-				76AB69422ABFD9B100EB8DD1 /* APError.swift */,
+				76AB690F2ABF654200EB8DD1 /* Preview Content */,
+				76AB693B2ABFD6D600EB8DD1 /* Screens */,
 			);
 			path = Apptizers;
 			sourceTree = "<group>";
@@ -486,6 +486,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,6 +516,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
