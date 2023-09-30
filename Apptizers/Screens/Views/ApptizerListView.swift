@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct ApptizerListView: View {
-    @StateObject private var apptizerListViewModel = ApptizerListViewModel()
+    @StateObject private var viewModel = ApptizerListViewModel()
     
     var body: some View {
         NavigationView {
-            List(apptizerListViewModel.apptizers) { apptizer in
+            List(viewModel.apptizers) { apptizer in
                 ApptizerListCell(apptizer: apptizer)
             }
             .listStyle(.plain)
             .navigationTitle("🍟 Apptizers")
         }
         .onAppear {
-            apptizerListViewModel.getApptizers()
+            viewModel.getApptizers()
+        }
+        .alert(
+            item: $viewModel.alertItem) { alert in
+                Alert(
+                    title: alert.title,
+                    message: alert.message,
+                    dismissButton: alert.dismissButton
+                )
         }
     }
 }

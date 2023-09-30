@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7676CFE52AC88D700031DEF3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676CFE42AC88D700031DEF3 /* Alert.swift */; };
 		76AB690A2ABF654000EB8DD1 /* ApptizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69092ABF654000EB8DD1 /* ApptizersApp.swift */; };
 		76AB690C2ABF654000EB8DD1 /* ApptizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB690B2ABF654000EB8DD1 /* ApptizerTabView.swift */; };
 		76AB690E2ABF654200EB8DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76AB690D2ABF654200EB8DD1 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7676CFE42AC88D700031DEF3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		76AB69062ABF654000EB8DD1 /* Apptizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apptizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76AB69092ABF654000EB8DD1 /* ApptizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptizersApp.swift; sourceTree = "<group>"; };
 		76AB690B2ABF654000EB8DD1 /* ApptizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptizerTabView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				76AB69402ABFD89300EB8DD1 /* NetworkManager.swift */,
 				76AB690F2ABF654200EB8DD1 /* Preview Content */,
 				76AB693B2ABFD6D600EB8DD1 /* Screens */,
+				7676CFE42AC88D700031DEF3 /* Alert.swift */,
 			);
 			path = Apptizers;
 			sourceTree = "<group>";
@@ -158,11 +161,11 @@
 		76AB693C2ABFD6F600EB8DD1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				76AB69442ABFE38C00EB8DD1 /* ApptizerListViewModel.swift */,
 				76AB69332ABF671700EB8DD1 /* ApptizerListView.swift */,
 				76AB69352ABF672300EB8DD1 /* AccountView.swift */,
 				76AB69372ABF673100EB8DD1 /* OrderView.swift */,
 				76AB693E2ABFD76100EB8DD1 /* ApptizerListCell.swift */,
-				76AB69442ABFE38C00EB8DD1 /* ApptizerListViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				76AB693A2ABF715B00EB8DD1 /* Apptizer.swift in Sources */,
 				76AB69412ABFD89300EB8DD1 /* NetworkManager.swift in Sources */,
 				76AB690C2ABF654000EB8DD1 /* ApptizerTabView.swift in Sources */,
+				7676CFE52AC88D700031DEF3 /* Alert.swift in Sources */,
 				76AB690A2ABF654000EB8DD1 /* ApptizersApp.swift in Sources */,
 				76AB69382ABF673100EB8DD1 /* OrderView.swift in Sources */,
 			);
