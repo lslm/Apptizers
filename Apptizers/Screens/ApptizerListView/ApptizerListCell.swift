@@ -12,8 +12,7 @@ struct ApptizerListCell: View {
     
     var body: some View {
         HStack {
-            Image("asian-flank-steak")
-                .resizable()
+            ApptizerRemoteImage(urlString: apptizer.imageURL)
                 .scaledToFit()
                 .frame(width: 120, height: 90)
                 .clipShape(RoundedRectangle(cornerRadius: 16))

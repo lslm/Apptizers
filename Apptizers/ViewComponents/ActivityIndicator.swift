@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// This can be replaced with native ProgressView()
 struct ActivityIndicator: UIViewRepresentable {
     func makeUIView(context: Context) -> UIActivityIndicatorView {
         let activityIndicatorView = UIActivityIndicatorView(style: .medium)

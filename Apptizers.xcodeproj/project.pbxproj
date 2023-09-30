@@ -10,6 +10,7 @@
 		7676CFE52AC88D700031DEF3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676CFE42AC88D700031DEF3 /* Alert.swift */; };
 		7676CFE72AC8A06B0031DEF3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676CFE62AC8A06B0031DEF3 /* ActivityIndicator.swift */; };
 		7676CFEB2AC8A49E0031DEF3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676CFEA2AC8A49E0031DEF3 /* LoadingView.swift */; };
+		7676CFED2AC8AF0C0031DEF3 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676CFEC2AC8AF0C0031DEF3 /* RemoteImage.swift */; };
 		76AB690A2ABF654000EB8DD1 /* ApptizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69092ABF654000EB8DD1 /* ApptizersApp.swift */; };
 		76AB690C2ABF654000EB8DD1 /* ApptizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB690B2ABF654000EB8DD1 /* ApptizerTabView.swift */; };
 		76AB690E2ABF654200EB8DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76AB690D2ABF654200EB8DD1 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		7676CFE42AC88D700031DEF3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7676CFE62AC8A06B0031DEF3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		7676CFEA2AC8A49E0031DEF3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		7676CFEC2AC8AF0C0031DEF3 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		76AB69062ABF654000EB8DD1 /* Apptizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apptizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76AB69092ABF654000EB8DD1 /* ApptizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptizersApp.swift; sourceTree = "<group>"; };
 		76AB690B2ABF654000EB8DD1 /* ApptizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptizerTabView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7676CFEE2AC8B3C70031DEF3 /* ApptizerListView */ = {
+			isa = PBXGroup;
+			children = (
+				76AB693E2ABFD76100EB8DD1 /* ApptizerListCell.swift */,
+				76AB69332ABF671700EB8DD1 /* ApptizerListView.swift */,
+			);
+			path = ApptizerListView;
+			sourceTree = "<group>";
+		};
+		7676CFEF2AC8B3DE0031DEF3 /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				76AB69352ABF672300EB8DD1 /* AccountView.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		7676CFF02AC8B4B80031DEF3 /* OrderView */ = {
+			isa = PBXGroup;
+			children = (
+				76AB69372ABF673100EB8DD1 /* OrderView.swift */,
+			);
+			path = OrderView;
+			sourceTree = "<group>";
+		};
+		7676CFF12AC8B4FA0031DEF3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				76AB69442ABFE38C00EB8DD1 /* ApptizerListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7676CFF22AC8B52D0031DEF3 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7676CFEC2AC8AF0C0031DEF3 /* RemoteImage.swift */,
+				7676CFEA2AC8A49E0031DEF3 /* LoadingView.swift */,
+				7676CFE62AC8A06B0031DEF3 /* ActivityIndicator.swift */,
+				7676CFE42AC88D700031DEF3 /* Alert.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		7676CFF32AC8B5C40031DEF3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				76AB69422ABFD9B100EB8DD1 /* APError.swift */,
+				76AB69402ABFD89300EB8DD1 /* NetworkManager.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		76AB68FD2ABF654000EB8DD1 = {
 			isa = PBXGroup;
 			children = (
@@ -116,16 +171,13 @@
 		76AB69082ABF654000EB8DD1 /* Apptizers */ = {
 			isa = PBXGroup;
 			children = (
-				76AB69422ABFD9B100EB8DD1 /* APError.swift */,
-				76AB69092ABF654000EB8DD1 /* ApptizersApp.swift */,
-				76AB690D2ABF654200EB8DD1 /* Assets.xcassets */,
+				7676CFF32AC8B5C40031DEF3 /* Repositories */,
+				7676CFF22AC8B52D0031DEF3 /* ViewComponents */,
+				7676CFF12AC8B4FA0031DEF3 /* ViewModels */,
 				76AB693D2ABFD71500EB8DD1 /* Models */,
-				76AB69402ABFD89300EB8DD1 /* NetworkManager.swift */,
-				76AB690F2ABF654200EB8DD1 /* Preview Content */,
 				76AB693B2ABFD6D600EB8DD1 /* Screens */,
-				7676CFE42AC88D700031DEF3 /* Alert.swift */,
-				7676CFE62AC8A06B0031DEF3 /* ActivityIndicator.swift */,
-				7676CFEA2AC8A49E0031DEF3 /* LoadingView.swift */,
+				76AB690F2ABF654200EB8DD1 /* Preview Content */,
+				76AB690D2ABF654200EB8DD1 /* Assets.xcassets */,
 			);
 			path = Apptizers;
 			sourceTree = "<group>";
@@ -158,22 +210,13 @@
 		76AB693B2ABFD6D600EB8DD1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				76AB693C2ABFD6F600EB8DD1 /* Views */,
+				7676CFF02AC8B4B80031DEF3 /* OrderView */,
+				7676CFEF2AC8B3DE0031DEF3 /* AccountView */,
+				7676CFEE2AC8B3C70031DEF3 /* ApptizerListView */,
+				76AB69092ABF654000EB8DD1 /* ApptizersApp.swift */,
 				76AB690B2ABF654000EB8DD1 /* ApptizerTabView.swift */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		76AB693C2ABFD6F600EB8DD1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				76AB69442ABFE38C00EB8DD1 /* ApptizerListViewModel.swift */,
-				76AB69332ABF671700EB8DD1 /* ApptizerListView.swift */,
-				76AB69352ABF672300EB8DD1 /* AccountView.swift */,
-				76AB69372ABF673100EB8DD1 /* OrderView.swift */,
-				76AB693E2ABFD76100EB8DD1 /* ApptizerListCell.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		76AB693D2ABFD71500EB8DD1 /* Models */ = {
@@ -323,6 +366,7 @@
 				76AB693A2ABF715B00EB8DD1 /* Apptizer.swift in Sources */,
 				76AB69412ABFD89300EB8DD1 /* NetworkManager.swift in Sources */,
 				76AB690C2ABF654000EB8DD1 /* ApptizerTabView.swift in Sources */,
+				7676CFED2AC8AF0C0031DEF3 /* RemoteImage.swift in Sources */,
 				7676CFE52AC88D700031DEF3 /* Alert.swift in Sources */,
 				76AB690A2ABF654000EB8DD1 /* ApptizersApp.swift in Sources */,
 				7676CFEB2AC8A49E0031DEF3 /* LoadingView.swift in Sources */,

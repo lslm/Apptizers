@@ -16,6 +16,9 @@ struct ApptizerListView: View {
                 List(viewModel.apptizers) { apptizer in
                     ApptizerListCell(apptizer: apptizer)
                 }
+                .refreshable {
+                    viewModel.getApptizers()
+                }
                 .listStyle(.plain)
                 .navigationTitle("🍟 Apptizers")
             }
@@ -24,7 +27,7 @@ struct ApptizerListView: View {
             }
             
             if viewModel.isLoading {
-                LoadingView()
+                ProgressView()
             }
         }
         .alert(item: $viewModel.alertItem) { alert in
