@@ -11,23 +11,28 @@ struct ApptizerListView: View {
     @StateObject private var viewModel = ApptizerListViewModel()
     
     var body: some View {
-        NavigationView {
-            List(viewModel.apptizers) { apptizer in
-                ApptizerListCell(apptizer: apptizer)
+        ZStack {
+            NavigationView {
+                List(viewModel.apptizers) { apptizer in
+                    ApptizerListCell(apptizer: apptizer)
+                }
+                .listStyle(.plain)
+                .navigationTitle("🍟 Apptizers")
             }
-            .listStyle(.plain)
-            .navigationTitle("🍟 Apptizers")
+            .onAppear {
+                viewModel.getApptizers()
+            }
+            
+            if viewModel.isLoading {
+                LoadingView()
+            }
         }
-        .onAppear {
-            viewModel.getApptizers()
-        }
-        .alert(
-            item: $viewModel.alertItem) { alert in
-                Alert(
-                    title: alert.title,
-                    message: alert.message,
-                    dismissButton: alert.dismissButton
-                )
+        .alert(item: $viewModel.alertItem) { alert in
+            Alert(
+                title: alert.title,
+                message: alert.message,
+                dismissButton: alert.dismissButton
+            )
         }
     }
 }

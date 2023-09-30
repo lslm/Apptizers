@@ -5,18 +5,23 @@
 //  Created by Lucas Santos on 24/09/23.
 //
 
-import Foundation
+import SwiftUI
 
 final class ApptizerListViewModel: ObservableObject {
     @Published var apptizers: [Apptizer] = []
     @Published var alertItem: AlertItem?
+    @Published var isLoading = false
     
     func getApptizers() {
+        isLoading = true
         NetworkManager.shared.getApptizers { result in
             DispatchQueue.main.async {
+                self.isLoading = false
                 switch result {
                 case .success(let apptizers):
-                    self.apptizers = apptizers
+                    withAnimation {
+                        self.apptizers = apptizers
+                    }
                 case .failure(let error):
                     self.alertItem = self.getAlertItem(for: error)
                 }
