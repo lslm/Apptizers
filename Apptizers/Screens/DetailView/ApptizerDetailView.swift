@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ApptizerDetailView: View {
     let apptizer: Apptizer
+    @Binding var isShowingDetailView: Bool
 
     var body: some View {
         VStack {
-            Image(.asianFlankSteak)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 320)
+            ApptizerRemoteImage(urlString: apptizer.imageURL)
+                .scaledToFill()
+                .frame(width: 320, height: 200)
+                .clipped()
 
             InformationView(apptizer: apptizer)
                 .padding()
@@ -39,7 +40,7 @@ struct ApptizerDetailView: View {
         .shadow(radius: 24)
         .overlay(
             CloseButtonView {
-                print("Close")
+                isShowingDetailView = false
             }
             .padding(8),
             alignment: .topTrailing
@@ -48,5 +49,5 @@ struct ApptizerDetailView: View {
 }
 
 #Preview {
-    ApptizerDetailView(apptizer: MockData.sampleApptizer)
+    ApptizerDetailView(apptizer: MockData.sampleApptizer, isShowingDetailView: .constant(true))
 }
