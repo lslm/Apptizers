@@ -29,11 +29,13 @@ struct ApptizerListView: View {
                 }
                 .listStyle(.plain)
                 .navigationTitle("🍟 Apptizers")
+                .disabled(isShowingDetailView)
             }
             .onAppear {
                 viewModel.getApptizers()
             }
-            
+            .blur(radius: isShowingDetailView ? 24 : 0)
+
             if viewModel.isLoading {
                 ProgressView()
             }
