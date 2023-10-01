@@ -11,9 +11,12 @@ final class ApptizerListViewModel: ObservableObject {
     @Published var apptizers: [Apptizer] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
-    
+    @Published var isShowingDetailView = false
+    @Published var selectedApptizer: Apptizer?
+
     func getApptizers() {
         isLoading = true
+
         NetworkManager.shared.getApptizers { result in
             DispatchQueue.main.async {
                 self.isLoading = false
@@ -42,6 +45,13 @@ final class ApptizerListViewModel: ObservableObject {
             
         case .unableToComplete:
             return AlertContext.unableToComplete
+        }
+    }
+
+    func showDetailView(for apptizer: Apptizer) {
+        withAnimation {
+            isShowingDetailView = true
+            selectedApptizer = apptizer
         }
     }
 }

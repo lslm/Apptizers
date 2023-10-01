@@ -13,6 +13,7 @@ struct InformationView: View {
     var body: some View {
         VStack {
             Text(apptizer.name)
+                .multilineTextAlignment(.center)
                 .font(.title)
                 .fontWeight(.medium)
 

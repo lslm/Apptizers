@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ApptizerListView: View {
     @StateObject private var viewModel = ApptizerListViewModel()
-    @State private var isShowingDetailView = false
-    @State private var selectedApptizer: Apptizer?
 
     var body: some View {
         ZStack {
@@ -18,10 +16,7 @@ struct ApptizerListView: View {
                 List(viewModel.apptizers) { apptizer in
                     ApptizerListCell(apptizer: apptizer)
                         .onTapGesture {
-                            withAnimation {
-                                isShowingDetailView = true
-                                selectedApptizer = apptizer
-                            }
+                            viewModel.showDetailView(for: apptizer)
                         }
                 }
                 .refreshable {
@@ -29,19 +24,22 @@ struct ApptizerListView: View {
                 }
                 .listStyle(.plain)
                 .navigationTitle("🍟 Apptizers")
-                .disabled(isShowingDetailView)
+                .disabled(viewModel.isShowingDetailView)
             }
             .onAppear {
                 viewModel.getApptizers()
             }
-            .blur(radius: isShowingDetailView ? 24 : 0)
+            .blur(radius: viewModel.isShowingDetailView ? 24 : 0)
 
             if viewModel.isLoading {
                 ProgressView()
             }
 
-            if isShowingDetailView {
-                ApptizerDetailView(apptizer: selectedApptizer!, isShowingDetailView: $isShowingDetailView)
+            if viewModel.isShowingDetailView {
+                ApptizerDetailView(
+                    apptizer: viewModel.selectedApptizer!,
+                    isShowingDetailView: $viewModel.isShowingDetailView
+                )
             }
         }
         .alert(item: $viewModel.alertItem) { alert in

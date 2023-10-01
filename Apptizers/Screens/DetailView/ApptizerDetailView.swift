@@ -13,34 +13,26 @@ struct ApptizerDetailView: View {
 
     var body: some View {
         VStack {
-            ApptizerRemoteImage(urlString: apptizer.imageURL)
-                .scaledToFill()
-                .frame(width: 320, height: 200)
-                .clipped()
+            DetailImageView(imageURL: apptizer.imageURL)
 
             InformationView(apptizer: apptizer)
                 .padding()
 
-            Button {
-
-            } label: {
-                Text("\(apptizer.price.formatted(.currency(code: "USD"))) - Add To Order")
-                    .frame(height: 42)
-                    .padding(.horizontal)
-                    .foregroundStyle(.white)
-                    .background(.brandPrimary)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .fontWeight(.medium)
-                    .padding(.bottom, 16)
+            AddToOrderButtonView(
+                text: "\(apptizer.price.formatted(.currency(code: "USD"))) - Add To Order"
+            ) {
+                print("Adding to order")
             }
         }
         .frame(width: 320)
-        .background(Color(.systemBackground))
+        .background(.regularMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 24))
         .shadow(radius: 24)
         .overlay(
             CloseButtonView {
-                isShowingDetailView = false
+                withAnimation {
+                    isShowingDetailView = false
+                }
             }
             .padding(8),
             alignment: .topTrailing
@@ -49,5 +41,12 @@ struct ApptizerDetailView: View {
 }
 
 #Preview {
-    ApptizerDetailView(apptizer: MockData.sampleApptizer, isShowingDetailView: .constant(true))
+    ZStack {
+        Image(.asianFlankSteak)
+            .resizable()
+        ApptizerDetailView(
+            apptizer: MockData.sampleApptizer,
+            isShowingDetailView: .constant(true)
+        )
+    }
 }

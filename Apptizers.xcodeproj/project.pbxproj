@@ -14,6 +14,8 @@
 		7676CFF62AC8E6510031DEF3 /* ApptizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676CFF52AC8E6510031DEF3 /* ApptizerDetailView.swift */; };
 		7676CFF82AC8EC440031DEF3 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676CFF72AC8EC440031DEF3 /* InformationView.swift */; };
 		7676CFFA2AC8F69C0031DEF3 /* CloseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676CFF92AC8F69C0031DEF3 /* CloseButtonView.swift */; };
+		7676CFFC2AC906000031DEF3 /* AddToOrderButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676CFFB2AC906000031DEF3 /* AddToOrderButtonView.swift */; };
+		7676CFFE2AC908AE0031DEF3 /* DetailImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676CFFD2AC908AE0031DEF3 /* DetailImageView.swift */; };
 		76AB690A2ABF654000EB8DD1 /* ApptizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69092ABF654000EB8DD1 /* ApptizersApp.swift */; };
 		76AB690C2ABF654000EB8DD1 /* ApptizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB690B2ABF654000EB8DD1 /* ApptizerTabView.swift */; };
 		76AB690E2ABF654200EB8DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76AB690D2ABF654200EB8DD1 /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		7676CFF52AC8E6510031DEF3 /* ApptizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptizerDetailView.swift; sourceTree = "<group>"; };
 		7676CFF72AC8EC440031DEF3 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		7676CFF92AC8F69C0031DEF3 /* CloseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButtonView.swift; sourceTree = "<group>"; };
+		7676CFFB2AC906000031DEF3 /* AddToOrderButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToOrderButtonView.swift; sourceTree = "<group>"; };
+		7676CFFD2AC908AE0031DEF3 /* DetailImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageView.swift; sourceTree = "<group>"; };
 		76AB69062ABF654000EB8DD1 /* Apptizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apptizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76AB69092ABF654000EB8DD1 /* ApptizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptizersApp.swift; sourceTree = "<group>"; };
 		76AB690B2ABF654000EB8DD1 /* ApptizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptizerTabView.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				7676CFF52AC8E6510031DEF3 /* ApptizerDetailView.swift */,
 				7676CFF72AC8EC440031DEF3 /* InformationView.swift */,
 				7676CFF92AC8F69C0031DEF3 /* CloseButtonView.swift */,
+				7676CFFB2AC906000031DEF3 /* AddToOrderButtonView.swift */,
+				7676CFFD2AC908AE0031DEF3 /* DetailImageView.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76AB693F2ABFD76100EB8DD1 /* ApptizerListCell.swift in Sources */,
+				7676CFFE2AC908AE0031DEF3 /* DetailImageView.swift in Sources */,
 				7676CFF82AC8EC440031DEF3 /* InformationView.swift in Sources */,
 				7676CFFA2AC8F69C0031DEF3 /* CloseButtonView.swift in Sources */,
 				76AB69452ABFE38D00EB8DD1 /* ApptizerListViewModel.swift in Sources */,
@@ -386,6 +393,7 @@
 				76AB69412ABFD89300EB8DD1 /* NetworkManager.swift in Sources */,
 				76AB690C2ABF654000EB8DD1 /* ApptizerTabView.swift in Sources */,
 				7676CFED2AC8AF0C0031DEF3 /* RemoteImage.swift in Sources */,
+				7676CFFC2AC906000031DEF3 /* AddToOrderButtonView.swift in Sources */,
 				7676CFE52AC88D700031DEF3 /* Alert.swift in Sources */,
 				76AB690A2ABF654000EB8DD1 /* ApptizersApp.swift in Sources */,
 				7676CFEB2AC8A49E0031DEF3 /* LoadingView.swift in Sources */,
