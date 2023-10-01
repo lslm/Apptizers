@@ -13,6 +13,8 @@ struct ApptizerListCell: View {
     var body: some View {
         HStack {
             ApptizerRemoteImage(urlString: apptizer.imageURL)
+                .symbolRenderingMode(.hierarchical)
+                .foregroundStyle(.red)
                 .scaledToFit()
                 .frame(width: 120, height: 90)
                 .clipShape(RoundedRectangle(cornerRadius: 16))

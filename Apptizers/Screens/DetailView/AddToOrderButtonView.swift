@@ -16,13 +16,12 @@ struct AddToOrderButtonView: View {
             action()
         } label: {
             Text(text)
-                .frame(height: 42)
-                .padding(.horizontal)
+                .frame(maxWidth: .infinity)
+                .padding()
                 .foregroundStyle(.white)
                 .background(.brandPrimary)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .fontWeight(.medium)
-                .padding(.bottom, 16)
         }
     }
 }

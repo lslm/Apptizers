@@ -22,7 +22,7 @@ struct ApptizerListView: View {
                 .refreshable {
                     viewModel.getApptizers()
                 }
-                .listStyle(.plain)
+                .listStyle(.grouped)
                 .navigationTitle("🍟 Apptizers")
                 .disabled(viewModel.isShowingDetailView)
             }

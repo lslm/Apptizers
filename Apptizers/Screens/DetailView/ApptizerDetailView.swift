@@ -16,17 +16,18 @@ struct ApptizerDetailView: View {
             DetailImageView(imageURL: apptizer.imageURL)
 
             InformationView(apptizer: apptizer)
-                .padding()
+
 
             AddToOrderButtonView(
                 text: "\(apptizer.price.formatted(.currency(code: "USD"))) - Add To Order"
             ) {
                 print("Adding to order")
             }
+            .padding()
         }
         .frame(width: 320)
-        .background(.regularMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 24))
+        .background(.thickMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 16))
         .shadow(radius: 24)
         .overlay(
             CloseButtonView {

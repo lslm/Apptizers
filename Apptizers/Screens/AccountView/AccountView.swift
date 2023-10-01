@@ -8,10 +8,20 @@
 import SwiftUI
 
 struct AccountView: View {
+    @State private var firstName = ""
+    @State private var lastName = ""
+
     var body: some View {
         NavigationView {
-            Text("Account view")
-                .navigationTitle("Account")
+            Form {
+                Section {
+                    TextField("First Name", text: $firstName)
+                    TextField("Last Name", text: $lastName)
+                } header: {
+                    Text("Personal information")
+                }
+            }
+            .navigationTitle("Account")
         }
     }
 }

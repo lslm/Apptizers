@@ -15,7 +15,7 @@ struct ApptizerTabView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-            
+
             AccountView()
                 .tabItem {
                     Image(systemName: "person")
