@@ -108,8 +108,8 @@
 		7676CFEE2AC8B3C70031DEF3 /* ApptizerListView */ = {
 			isa = PBXGroup;
 			children = (
-				76AB693E2ABFD76100EB8DD1 /* ApptizerListCell.swift */,
 				76AB69332ABF671700EB8DD1 /* ApptizerListView.swift */,
+				76AB693E2ABFD76100EB8DD1 /* ApptizerListCell.swift */,
 			);
 			path = ApptizerListView;
 			sourceTree = "<group>";
