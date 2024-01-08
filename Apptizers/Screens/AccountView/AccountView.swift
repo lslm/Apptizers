@@ -17,7 +17,7 @@ struct AccountView: View {
                     DatePicker("Birthday", selection: $accountViewModel.birthdate, displayedComponents: .date)
                     
                     Button {
-                        print("Save")
+                        accountViewModel.saveChanges()
                     } label: {
                         Text("Save changes")
                     }
@@ -34,6 +34,9 @@ struct AccountView: View {
                 //.toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
             }
             .navigationTitle("Account")
+            .alert(item: $accountViewModel.alertItem) { alertItem in
+                Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
+            }
         }
     }
 }

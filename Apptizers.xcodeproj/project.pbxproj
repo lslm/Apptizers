@@ -32,6 +32,7 @@
 		76AB69432ABFD9B100EB8DD1 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69422ABFD9B100EB8DD1 /* APError.swift */; };
 		76AB69452ABFE38D00EB8DD1 /* ApptizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69442ABFE38C00EB8DD1 /* ApptizerListViewModel.swift */; };
 		76DF6B412B4B9C0D00745617 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF6B402B4B9C0D00745617 /* AccountViewModel.swift */; };
+		76DF6B442B4B9E7F00745617 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF6B432B4B9E7F00745617 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		76AB69422ABFD9B100EB8DD1 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		76AB69442ABFE38C00EB8DD1 /* ApptizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptizerListViewModel.swift; sourceTree = "<group>"; };
 		76DF6B402B4B9C0D00745617 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		76DF6B432B4B9E7F00745617 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 		76AB69082ABF654000EB8DD1 /* Apptizers */ = {
 			isa = PBXGroup;
 			children = (
+				76DF6B422B4B9E6F00745617 /* Extensions */,
 				7676CFF32AC8B5C40031DEF3 /* Repositories */,
 				7676CFF22AC8B52D0031DEF3 /* ViewComponents */,
 				7676CFF12AC8B4FA0031DEF3 /* ViewModels */,
@@ -251,6 +254,14 @@
 				76AB69392ABF715B00EB8DD1 /* Apptizer.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		76DF6B422B4B9E6F00745617 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76DF6B432B4B9E7F00745617 /* String+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +409,7 @@
 				76AB690C2ABF654000EB8DD1 /* ApptizerTabView.swift in Sources */,
 				7676CFED2AC8AF0C0031DEF3 /* RemoteImage.swift in Sources */,
 				7676CFFC2AC906000031DEF3 /* AddToOrderButtonView.swift in Sources */,
+				76DF6B442B4B9E7F00745617 /* String+Ext.swift in Sources */,
 				7676CFE52AC88D700031DEF3 /* Alert.swift in Sources */,
 				76AB690A2ABF654000EB8DD1 /* ApptizersApp.swift in Sources */,
 				7676CFEB2AC8A49E0031DEF3 /* LoadingView.swift in Sources */,

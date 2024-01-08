@@ -38,4 +38,16 @@ struct AlertContext {
         message: Text("Unable to make request"),
         dismissButton: .default(Text("OK"))
     )
+    
+    static let invalidForm = AlertItem(
+        title: Text("Invalid Form"),
+        message: Text("Please ensure all fields in the form have been filled out"),
+        dismissButton: .default(Text("OK"))
+    )
+    
+    static let invalidEmail = AlertItem(
+        title: Text("Invalid Email Format"),
+        message: Text("Please ensure your email is correct."),
+        dismissButton: .default(Text("OK"))
+    )
 }
