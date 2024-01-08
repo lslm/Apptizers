@@ -31,6 +31,7 @@
 		76AB69412ABFD89300EB8DD1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69402ABFD89300EB8DD1 /* NetworkManager.swift */; };
 		76AB69432ABFD9B100EB8DD1 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69422ABFD9B100EB8DD1 /* APError.swift */; };
 		76AB69452ABFE38D00EB8DD1 /* ApptizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB69442ABFE38C00EB8DD1 /* ApptizerListViewModel.swift */; };
+		76DF6B412B4B9C0D00745617 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF6B402B4B9C0D00745617 /* AccountViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		76AB69402ABFD89300EB8DD1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		76AB69422ABFD9B100EB8DD1 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		76AB69442ABFE38C00EB8DD1 /* ApptizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptizerListViewModel.swift; sourceTree = "<group>"; };
+		76DF6B402B4B9C0D00745617 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				76AB69352ABF672300EB8DD1 /* AccountView.swift */,
+				76DF6B402B4B9C0D00745617 /* AccountViewModel.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				7676CFFA2AC8F69C0031DEF3 /* CloseButtonView.swift in Sources */,
 				76AB69452ABFE38D00EB8DD1 /* ApptizerListViewModel.swift in Sources */,
 				76AB69432ABFD9B100EB8DD1 /* APError.swift in Sources */,
+				76DF6B412B4B9C0D00745617 /* AccountViewModel.swift in Sources */,
 				76AB69362ABF672300EB8DD1 /* AccountView.swift in Sources */,
 				7676CFE72AC8A06B0031DEF3 /* ActivityIndicator.swift in Sources */,
 				76AB69342ABF671700EB8DD1 /* ApptizerListView.swift in Sources */,

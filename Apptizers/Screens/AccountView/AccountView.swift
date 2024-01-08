@@ -1,26 +1,20 @@
 import SwiftUI
 
 struct AccountView: View {
-    @State private var firstName = ""
-    @State private var lastName = ""
-    @State private var email = ""
-    @State private var birthdate = Date()
-    
-    @State private var extraNapkins = false
-    @State private var frequentRefills = false
+    @StateObject private var accountViewModel = AccountViewModel()
 
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    TextField("First Name", text: $firstName)
-                    TextField("Last Name", text: $lastName)
-                    TextField("Email", text: $email)
+                    TextField("First Name", text: $accountViewModel.firstName)
+                    TextField("Last Name", text: $accountViewModel.lastName)
+                    TextField("Email", text: $accountViewModel.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .autocorrectionDisabled()
                     
-                    DatePicker("Birthday", selection: $birthdate, displayedComponents: .date)
+                    DatePicker("Birthday", selection: $accountViewModel.birthdate, displayedComponents: .date)
                     
                     Button {
                         print("Save")
@@ -32,8 +26,8 @@ struct AccountView: View {
                 }
                 
                 Section {
-                    Toggle("Extra napkins", isOn: $extraNapkins)
-                    Toggle("Frequent Refills", isOn: $frequentRefills)
+                    Toggle("Extra napkins", isOn: $accountViewModel.extraNapkins)
+                    Toggle("Frequent Refills", isOn: $accountViewModel.frequentRefills)
                 } header: {
                     Text("Request")
                 }
